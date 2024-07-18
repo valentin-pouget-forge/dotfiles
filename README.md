@@ -93,17 +93,6 @@ rofi (optional)
 nwg-dock (optional)
 ```
 
-**For i3**
-
-```
-py3status
-scrot
-i3lock
-picom (optional)
-rofi (optional)
-xfce4-panel (optional)
-```
-
 **For Fish:**
 
 ```
@@ -140,62 +129,12 @@ Chezmoi will do this automatically for you.
 ## :inbox_tray:&nbsp; Installation
 
 Git clone this repository into your host machine:
-`git clone https://github.com/budimanjojo/dotfiles.git`
+`git clone https://github.com/valentin-pouget-forge/dotfiles.git`
 Run install.sh:
 `./install.sh`
-Then do `chezmoi init --apply budimanjojo`
+Then do `chezmoi init --apply valentin-pouget-forge`
 
 ## :scroll:&nbsp; Cheatsheet
-
-### Sway/i3/Hyprland keybindings
-
-I use `Super` key for Sway/i3.
-`hjkl` keys are mapped to `left`, `down`, `up`, `right` arrow keys.
-`S` means Super key, [0-9] means number key 0 to 9.
-
-| Keypress        | Description |
-| :-------------: | :---------- |
-| `S+t`           | Open terminal app |
-| `S+w`           | Open browser |
-| `S+f`           | Open file manager |
-| `S+g`           | Open GIMP |
-| `S+b`           | Open OBS |
-| `S+s`           | Open Steam |
-| `S+grave`       | Open rofi apps menu|
-| `S+Tab`         | Open rofi opened apps menu |
-| `Alt+F4`        | Close window |
-| `S+F4`          | Close window |
-| `S+k`           | Change focus to window above |
-| `S+j`           | Change focus to window below |
-| `S+h`           | Change focus to left side window |
-| `S+l`           | Change focus to right side window |
-| `S+Shift+k`     | Move focused window up |
-| `S+Shift+j`     | Move focused window down |
-| `S+Shift+h`     | Move focused window left |
-| `S+Shift+l`     | Move focused window right |
-| `S+Ctrl+h`      | Split opened windows horizontally |
-| `S+Ctrl+v`      | Split opened windows vertically |
-| `S+Ctrl+q`      | Toggle opened windows split |
-| `S+Tab`         | Go to next workspace |
-| `S+Shift+Tab`   | Go to previous workspace |
-| `S+Ctrl+t`      | Toggle window border on/off |
-| `S+Ctrl+g`      | Toggle gaps on/off |
-| `S+Ctrl+f`      | Toggle fullscreen mode on/off |
-| `S+Ctrl+s`      | Change container layout to stacking |
-| `S+Ctrl+w`      | Change container layout to tabbed |
-| `S+Ctrl+e`      | Toggle split layout to horizontal/vertical |
-| `S+Shift+Space` | Toggle window floating on/off |
-| `S+Space`       | Swap focus between tiling/floating window |
-| `S+Shift+p`     | Move current focused window to scratchpad |
-| `S+p`           | Show/hide scratchpad window |
-| `S+[0-9]`       | Go to workspace #[0-9] |
-| `S+Shift+[0-9]` | Move focused window to workspace #[0-9] |
-| `S+Shift+r`     | Go to resize container mode |
-| `S+Shift+g`     | Go to resize gaps mode |
-| `S+Ctrl+Del`    | Go to logout mode |
-| `Printscreen`   | Go to screenshot mode |
-| `S+Shift+c`     | Reload Sway configuration |
-| `S+Shift+e`     | Exit Sway |
 
 ### Neovim keybindings
 
@@ -260,49 +199,6 @@ If they are not in the table, that means it's using the default Vim keybindings.
 | `Normal`        | `gh`          | Do LSP buffer get hover |
 | `Normal`        | `gr`          | Do LSP buffer get references |
 | `Normal`        | `gi`          | Do LSP buffer get implementation |
-
-### Tmux keybindings
-
-I override the default keybindings for Tmux to be more reasonable.
-Prefix key is `Alt+a` for local session and `Alt+z` for nested session.
-You can of course override this.
-`<prefix>` means you need to press prefix key first, `<repeat>` means you don't need to press prefix key again after triggering it within `repeat-time` set (default set to 1 second), `<copy-mode>` means you must be in copy-mode first.
-The table below lists all the keybindings set.
-If they are not in the table, that means it's using the default Tmux keybindings.
-
-| Keypress                | Description |
-| :---------------------: | :---------- |
-| `<prefix>Alt+e`         | Edit tmux.conf.local file and reload configuration after saving |
-| `<prefix>Alt+r`         | Reload tmux configuration |
-| `<prefix>f`             | Find session, window, pane from list |
-| `<prefix>Alt+s`         | Create new horizontal split window |
-| `<prefix>Alt+v`         | Create new vertical split window |
-| `<prefix>r`             | Rename current window |
-| `<prefix>R`             | Rename current session |
-| `<prefix><repeat>k`     | Move selection to pane above |
-| `<prefix><repeat>j`     | Move selection to pane below |
-| `<prefix><repeat>h`     | Move selection to left pane |
-| `<prefix><repeat>l`     | Move selection to right pane |
-| `<prefix><repeat>>`     | Swap to next pane |
-| `<prefix><repeat><`     | Swap to previous pane |
-| `<prefix><repeat>K`     | Resize current pane upwards |
-| `<prefix><repeat>J`     | Resize current pane downwards |
-| `<prefix><repeat>H`     | Resize current pane to the left |
-| `<prefix><repeat>L`     | Resize current pane to the right |
-| `<prefix><repeat>Alt+n` | Move selection to next window |
-| `<prefix><repeat>Alt+p` | Move selection to previous window |
-| `<prefix><repeat>Tab`   | Move selection to next window |
-| `<prefix>S`             | Join current pane to selected window in horizontal split |
-| `<prefix>V`             | Join current pane to selected window in vertical split |
-| `<prefix>x`             | Close current pane |
-| `<prefix>X`             | Close current window |
-| `<prefix>Alt+x`         | Close all other windows |
-| `<prefix>a`             | Get into copy mode |
-| `<prefix>p`             | Paste copied text from last buffer |
-| `<prefix>P`             | Paste copied text from list |
-| `<copy-mode>y`          | Copy selected text |
-| `<copy-mode>Y`          | Copy the whole line of selected text |
-| `<copy-mode>D`          | Copy till the end of line from selected text |
 
 ### Zellij keybindings
 
